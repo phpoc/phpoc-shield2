@@ -1,0 +1,289 @@
+/*----------Common elements-----------*/
+body {
+	font-family: verdana, Helvetica, Arial, sans-serif, gulim;
+	height:750px;
+}
+
+h1 {
+	font-weight: bold;
+	font-size: 15pt;
+	padding-bottom: 5px;
+}
+
+hr {
+	margin: 50px 0 -10px 0;
+	width: 450px;
+	height: 6px;
+	border-width: 0;
+	color: gray;
+	background-color: gray;
+}
+
+table {
+	border-collapse: collapse;
+	font-size: 10pt;
+	width: 450px;
+}
+
+tr {
+	height: 28px;
+}
+
+td {
+	padding: 0;
+}
+
+select {
+	min-width: 100px;
+	background-color: #DEDEDE;
+}
+
+option {
+	color: black;
+}
+
+input::-ms-clear {
+	display: none;
+}
+
+input {
+	max-width: 180px;
+}
+
+span {
+	user-select: none;
+}
+
+/*----------Header & footer-----------*/
+.super-header {
+	height: 2em;
+	color: white;
+	background-color: rgb(0,153,153);
+	font-size: 9pt;
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 0;
+	z-index: 5;
+}
+
+.right {
+	color: white;
+	position: absolute;
+	right: 1px;
+	bottom: 1px;
+	font-size: 9pt;
+}
+
+.left {
+	color: white;
+	position: absolute;
+	left: 1px;
+	bottom: 1px;
+	font-size: 9pt;
+}
+
+.right a, .left a {
+	color: white;
+	background-color: transparent;
+	text-decoration: none;
+	margin: 0;
+	padding: 0 1ex 0 1ex;
+}
+
+.right a:hover, .left a:hover {
+	text-decoration: underline;
+}		 
+
+.mid-header {
+	color: white;
+	background-color: rgb(6, 38, 111);
+	position: fixed;
+	left: 0;
+	right: 0;
+	top: 1.5em;
+	z-index: 3;
+}
+
+.header-title {
+	font-size: 250%;
+	font-weight: normal;
+	margin: 0 0 0 4mm;
+	padding: 0.25ex 0 1ex 0;
+	font-family: impact;
+}
+
+.header-menu{
+	position: relative;
+	width: 450px;
+	padding: 5px;
+}
+
+.footer{
+	margin: 0 auto;
+	height: auto !important;
+	height:100%;
+	margin-bottom:-100px;
+}
+
+.super-footer {
+	height: 2em;
+	color: white;
+	background-color: rgb(6, 38, 111);
+	font-size: 9pt;
+	position: fixed;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 5;
+}
+
+a.selected {
+	background-color: white;
+	color: rgb(6, 38, 111);
+}
+
+/*---------Setting Info style---------*/
+.zebra {
+	background-color: #ECECEC;
+}
+
+.theader {
+	font-weight: bold;
+}
+
+.popup-mid-hdr {
+	position: static;
+	margin-bottom: 20px;
+}
+
+.popup-hdr-title {
+	padding: 10px;
+}
+
+.popup-table {
+	border-collapse: separate;
+}
+
+.popup-table td {
+	padding: 10px;
+}
+
+.info-table td {
+	padding: 1px 1px 1px 10px;
+}
+
+.wdh-10 {
+	width: 10%;
+}
+
+.wdh-35 {
+	width: 35%;
+}
+
+.wdh-40 {
+	width: 40%;
+}
+
+.wdh-100p {
+	width: 100px;
+}
+
+.wdh-300p {
+	width: 300px;
+}
+
+.btn-field {
+	text-align: center;
+}
+
+/*-----------App Env style------------*/
+.name-cell {
+	vertical-align: top;
+	width: 50%;
+	min-width: 200px;
+	font-weight: bold;
+}
+
+.value-cell {
+	min-width: 180px;
+}
+
+.selectable>td>div:first-child {
+	cursor: pointer;
+}
+
+.combobox {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
+	background-color: white;
+	color: white;
+	font-size: 1em;
+	position: relative;
+}
+
+select.combobox::-ms-expand {
+	display: none;
+}
+
+.combobox + input {
+	display: inline-block;
+	border: 0;
+	padding: 0;
+	outline: none;
+	margin: 0;
+	background-color: white;
+	position: relative;
+}
+
+.arrow-down {
+	display: inline-block;
+	pointer-events: none;
+	margin: 0 0 2px 7px;
+	border-left: 3px solid transparent;
+	border-right: 3px solid transparent;
+	border-top: 6px solid black;
+	position: relative;
+}
+
+.item-div {
+	height: 20px;
+	line-height: 20px;
+	padding: 6px 0;
+	white-space: nowrap;
+	display: flex;
+	align-items: center;
+}
+
+.indent {
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	margin: 2px;
+	vertical-align: middle;
+}
+
+.group::before {
+	content: ' ';
+	display: inline-block;
+	border-top: 6px solid transparent;
+	border-bottom: 6px solid transparent;
+	border-left: 8px solid black;
+	margin: 5px 0 0 3px;
+	transform: translateY(-5px);
+	transition: 0.2s;
+}
+
+.active {
+	transition: 0.2s;
+	transform: rotate(90deg);
+}
+
+.hide, .hidden>td>div {
+	display: none;
+}
+
+.hidden>td>div:first-child {
+	display: block;
+}
